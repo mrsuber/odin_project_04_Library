@@ -1,11 +1,12 @@
-let myLibrary = [{ ID: '1', Title:'Pride and Prejudice',Category: 'Romance', Author: 'Jane Austen',  Number_Of_pages:225,Price: 125.60 },
-            { ID: '2',  Title:'Harry porter', Category: 'Adventure',Author: 'J. K. Rowling',  Number_Of_pages:225,Price: 125.60  },
+let myLibrary = [{ ID: '1', Title:'Pride and Prejudice',Category: 'Romance', Author: 'Jane Austen',Status: 'Read',  Number_Of_pages:225,Price: 125.60 },
+            { ID: '2',  Title:'Harry porter', Category: 'Adventure',Author: 'J. K. Rowling',  Status: 'Unread',Number_Of_pages:225,Price: 125.60  },
             ];
 
 var crudApp = new function  () {
   // the constructor...
 this.myBooks=myLibrary;
 this.category = ['Fantasy','Adventure','Romance','Contemporary','Dystopian','Mystery','Horror','Thriller','Paranormal','Historical', 'fiction','Science Fiction','Memoir','Cooking','Art','Self-help',  'Personal','Development','Motivational','Health','History','Travel','Guide', ' How-to', 'Families & Relationships','Humor','Children’s'];
+this.Status=['Read','Unread']
 this.col = [];
 this.createTable = function () {
 
